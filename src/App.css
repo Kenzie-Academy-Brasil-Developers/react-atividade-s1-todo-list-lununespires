@@ -1,0 +1,114 @@
+.toDo {
+  border-radius: 25px 25px 0 0;
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  max-width: 680px;
+  background-color: #213487;
+}
+
+.toDo h2 {
+  color: #fff;
+}
+
+input[type="text"],
+textarea {
+  border: none;
+  width: 280px;
+  margin: 0.8rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  background-color: #ffffffe7;
+  transition: 0.2s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 3px #ec9f10;
+}
+
+input::placeholder {
+  color: rgb(139, 139, 139);
+}
+
+button {
+  border: none;
+  width: 100px;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  background-color: #ec9f10;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #ec9f10;
+  border: 1px solid #ec9f10;
+}
+
+.remove-toDo {
+  border-radius: 0 0 25px 25px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 20px;
+  max-width: 680px;
+  background-color: #21348721;
+}
+
+.remove-toDo ul {
+  font-size: 1.2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+  list-style-type: none;
+}
+
+.item button {
+  background: none;
+  border: none;
+}
+
+li button svg:hover {
+  background-color: #ec9f10;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
